@@ -20,6 +20,7 @@ public class OpenJPanel extends JPanel {
             System.out.println("Stream Opening Error");
         }else{
             while(stream.read(frame)){
+                return
 
             }
         }
