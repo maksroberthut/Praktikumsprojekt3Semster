@@ -9,5 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jogl-all" level="project" />
     <orderEntry type="library" name="opencv-343" level="project" />
+    <orderEntry type="library" name="opencv-343" level="application" />
   </component>
 </module>

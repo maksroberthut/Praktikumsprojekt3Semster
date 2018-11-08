@@ -12,6 +12,7 @@ import javax.swing.JPanel;
 import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
+import org.opencv.videoio.VideoCapture;
 
 
 public interface Imageoperations {
@@ -44,7 +45,7 @@ public interface Imageoperations {
 
 
 
-    public static Mat  sobelEdges(Mat imageMat,int arggc, char argv){
+    public static Mat  sobelEdges(Mat imageMat){
 
         if (imageMat.equals(null)){
             System.out.println("The source image is empty");
@@ -68,19 +69,23 @@ public interface Imageoperations {
         }
     }
 
-    public static Color colorLabeling(Mat ImageMat){
+    public static Mat colorLabeling(Mat ImageMat){
 
-        Color red = new Color(255,0,0);
-        Color green = new Color(0,255,0);
-        Color blue = new Color(0,0,255);
+        Mat Gaus = gaussianBlur(ImageMat);
 
-        Color redmin = new Color(100,0,0);
-        Color greenmin = new Color(0,100,0);
-        Color bluemin = new Color(0,0,100);
+        Scalar lowerGreen = new Scalar(10,30,10);
+        Scalar upperGreen = new Scalar(40,255,40);
 
-        Mat colorImg = new Mat();
+        Scalar lowerRed = new Scalar(30,10,10);
+        Scalar upperRed = new Scalar(255,40,40);
 
-        Core.inRange(ImageMat,redmin,red,colorImg);
+        Scalar lowerBlue = new Scalar(10,10,30);
+        Scalar upperBlue = new Scalar(40,40,255);
+
+        
+
+
+         return ImageMat;
 
 
 
