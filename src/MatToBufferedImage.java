@@ -29,7 +29,7 @@ public class MatToBufferedImage {
 
     }
     public BufferedImage getBufferedImage(){
-        Imgcodecs.imencode(".jpg",matrix,matrixByte);
+        Imgcodecs.imencode(fileID,matrix,matrixByte);
         byte[] byteArray = matrixByte.toArray();
         BufferedImage bufImg = null;
 
