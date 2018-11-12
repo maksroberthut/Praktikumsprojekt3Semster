@@ -28,9 +28,9 @@ public class Main extends OpenJPanel{
         }
         return camera;
 
-     /*   if(camera.isOpened()){
-            Thread.sleep(500);
-        }*/
+        if(camera.isOpened()){
+
+        }
 
     }
 }
