@@ -29,6 +29,8 @@ public class Main extends OpenJPanel{
         screen.setVisible(true);
         screen.setContentPane(facePanel);
 
+        MatToBufferedImage matToBufferedImageConverter = new MatToBufferedImage();
+
 
         Mat mat = new Mat();
         VideoCapture camera = new VideoCapture();
@@ -42,8 +44,8 @@ public class Main extends OpenJPanel{
             if(mat.empty()){
                 try {
                     Thread.sleep(200);
-                    MatToBufferedImage.setMatrix(mat,".jpg");
-                    facePanel.setFace(bu);
+                    matToBufferedImageConverter.setMatrix(mat,".jpg");
+                    
                     facePanel.repaint();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -53,8 +55,8 @@ public class Main extends OpenJPanel{
             }
 
         }
-        return camera;
+
 
     }
-}
+
 
