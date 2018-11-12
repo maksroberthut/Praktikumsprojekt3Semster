@@ -1,20 +1,9 @@
-import com.jogamp.common.nio.ByteBufferInputStream;
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
-import org.opencv.core.MatOfByte;
-import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.videoio.VideoCapture;
-
-import javax.imageio.ImageIO;
 import javax.swing.*;
-import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.awt.image.ImageObserver;
-import java.awt.image.ImageProducer;
-import java.beans.VetoableChangeListener;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.text.AttributedCharacterIterator;
+
 
 public class Main extends OpenJPanel{
 
