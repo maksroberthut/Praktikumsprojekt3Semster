@@ -45,7 +45,7 @@ public class Main extends OpenJPanel{
                 try {
                     Thread.sleep(200);
                     matToBufferedImageConverter.setMatrix(mat,".jpg");
-                    
+
                     facePanel.repaint();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
