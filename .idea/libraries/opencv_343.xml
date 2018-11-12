@@ -1,18 +1,17 @@
 <component name="libraryTable">
   <library name="opencv-343">
     <CLASSES>
-      <root url="jar://C:/Program Files/Java/OpenCV/opencv/build/java/opencv-343.jar!/" />
       <root url="jar://C:/Program Files/Java/opencv/build/java/opencv-343.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="http://docs.opencv.org/javadocs/" />
+      <root url="https://docs.opencv.org/3.4.3/" />
     </JAVADOC>
     <NATIVE>
       <root url="file://C:/Program Files/Java/OpenCV/opencv/build/java/x64" />
       <root url="file://C:/Program Files/Java/opencv/build/java/x64" />
     </NATIVE>
     <SOURCES>
-      <root url="jar://C:/Program Files/Java/OpenCV/opencv/build/java/opencv-343.jar!/" />
       <root url="jar://C:/Program Files/Java/opencv/build/java/opencv-343.jar!/" />
       <root url="file://C:/Program Files/Java/opencv/sources/modules/java/generator/android-21/java" />
       <root url="file://C:/Program Files/Java/opencv/sources/modules/java/generator/android/java" />
