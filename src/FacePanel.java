@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class FacePanel extends JPanel {
-    private BufferedImage image;
+    public BufferedImage image;
     int c = 0;
 
     public FacePanel(){
